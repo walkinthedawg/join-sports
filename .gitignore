@@ -1,1 +1,5 @@
+-d *.sqlite3\n*.pyc\n.~c9\n__pycache__/
 *.sqlite3
+*.pyc
+.~c9
+__pycache__/
