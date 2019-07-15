@@ -1,4 +1,4 @@
-"""joinsports URL Configuration
+"""django_authentication URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/1.11/topics/http/urls/
@@ -16,10 +16,10 @@ Including another URLconf
 from django.conf.urls import url, include
 from django.contrib import admin
 from accounts import urls as urls_accounts
-from home.views import index
+from accounts.views import index
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^$', index, name="index"),
+    url(r'^$', index, name='index'),
     url(r'^accounts/', include(urls_accounts)),
 ]
